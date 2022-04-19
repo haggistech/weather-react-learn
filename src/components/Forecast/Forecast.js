@@ -10,6 +10,7 @@ const Forecast = () => {
     let [error, setError] = useState(false);
     let [loading, setLoading] = useState(false);
 
+
 function getForecast(e) {
     e.preventDefault();
 
@@ -87,6 +88,7 @@ function getForecast(e) {
                responseObj={responseObj}
                error={error}
                loading={loading}
+               unit={unit}
                />
         </div>
     )
